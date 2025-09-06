@@ -1,7 +1,3 @@
-// Root route for health check and friendly message
-app.get('/', (req, res) => {
-    res.send('Backend is running!');
-});
 
 import express from 'express';
 import mongoose from 'mongoose';
@@ -14,7 +10,11 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: 'https://multivendor-ecommerce-project-with-mern-aai7.onrender.com', // your frontend URL
+    origin: [
+        'http://localhost:5173',
+        'https://multivendor-ecommerce-project-with-mern-aai7.onrender.com',
+        'https://multivendor-ecommerce-project-with-mern.onrender.com'
+    ], // allow local and deployed frontend
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin', 'Cache-Control'],
@@ -22,6 +22,11 @@ app.use(cors({
     optionsSuccessStatus: 200
 }));
 app.use(express.json());
+
+// Root route for health check and friendly message
+app.get('/', (req, res) => {
+    res.send('Backend is running!');
+});
 
 // Test route
 app.get('/test', (req, res) => {
