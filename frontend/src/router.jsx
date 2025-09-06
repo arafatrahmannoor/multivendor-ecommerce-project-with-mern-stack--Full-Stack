@@ -28,7 +28,7 @@ import AdminProducts from "./Pages/AdminProducts";
 import AdminPendingProducts from "./Pages/AdminPendingProducts";
 import AdminAnalytics from "./Pages/AdminAnalytics";
 import AdminSettings from "./Pages/AdminSettings";
-import APITest from "./Pages/APITest";
+// import APITest from "./Pages/APITest";
 import VendorProducts from "./Pages/VendorProducts";
 import VendorOrders from "./Pages/VendorOrders";
 import VendorAssignedOrders from "./Pages/VendorAssignedOrders";
@@ -145,11 +145,7 @@ const router = createBrowserRouter([
             {
                 path: "settings",
                 element: <AdminSettings />,
-            },
-            {
-                path: "api-test",
-                element: <APITest />,
-            },
+            }
         ]
     },
     // Vendor Routes with VendorLayout
