@@ -7,15 +7,15 @@ yarn-debug.log*
 node_modules/
 
 # Build output
-/dist/
-/build/
+#/dist/
+#/build/
 
 # Environment variables and secrets
-.env
-.env.local
-.env.development
-.env.production
-.env.test
+#.env
+#.env.local
+#.env.development
+#.env.production
+#.env.test
 
 # Log files
 *.log
