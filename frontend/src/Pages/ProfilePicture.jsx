@@ -88,10 +88,10 @@ const ProfilePicture = () => {
 
       const fields = ['profilePicture', 'profile_picture', 'avatar', 'image', 'file'];
       const paths = [
-        `/user/profile_picture/${user._id}`,
-        `/user/profile-picture/${user._id}`,
+        `/users/profile_picture/${user._id}`,
+        `/users/profile-picture/${user._id}`,
       ];
-      const methods = ['patch', 'put'];
+      const methods = ['patch'];
 
       let lastErr;
       for (const field of fields) {
