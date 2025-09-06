@@ -1,0 +1,123 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+# Node modules
+node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Coverage
+coverage/
+
+# Misc
+*.tgz
+
+# Public uploads (if any)
+public/uploads/
+public/profile_pictures/
+
+# Ignore documentation and analysis files
+FUNCTIONALITY_ANALYSIS.md
+IMPLEMENTATION_Summary.md
+MANUAL_TESTING_GUIDE.md
+*.md
+FUNCTIONALITY_ANALYSIS.md
+IMPLEMENTATION_SUMMARY.md
+MANUAL_TESTING_GUIDE.md
+README.md
+
+# Test and demo scripts
+src/test.jsx
+public/test-script.js
+public/debug-payment.js
+src/Components/APITest.jsx
+src/Pages/APITest.jsx
+src/Pages/Home_enhanced.jsx
+src/Pages/Home_backup.jsx
+src/Pages/AdminBrands_new.jsx
+src/Pages/AdminBrands_old.jsx
+src/Pages/AdminPayments_old.jsx
+src/Pages/AdminPayments_new.jsx
+src/Pages/AdminOrders_temp.jsx
+src/Pages/AdminOrders_old.jsx
+src/Pages/VendorOrders_new.jsx
+src/Pages/VendorOrders_old.jsx
+src/Pages/VendorProducts_old.jsx
+src/Pages/VendorProducts_new.jsx
+
+# Ignore SSLCommerz test credentials
+Backend/.env
+Backend/.env.local
+Backend/.env.development
+Backend/.env.production
+Backend/.env.test
+
+# Ignore email/password config
+Backend/*.env*
+
+# Ignore database dumps
+*.sql
+*.sqlite
+*.db
+*.bak
+
+# Ignore sensitive scripts
+Backend/create-test-user.js
+Backend/seed-database.js
+Backend/check-users.mjs
+Backend/test-server.js
+Backend/simple-test.js
+Backend/test-upload.js
+Backend/test-*.js
+Backend/*.test.js
+Backend/*.spec.js
+
+# Ignore any private keys
+*.pem
+*.key
+*.crt
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

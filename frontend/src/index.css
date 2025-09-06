@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Smooth theme transitions */
+html, body, #root {
+	height: 100%;
+}
+
+/* Optional: default background to avoid flash */
+body {
+	background-color: #f9fafb; /* gray-50 */
+	color: #111827; /* gray-900 */
+	transition: background-color 200ms, color 200ms;
+}
+
+/* Note: Dark backgrounds handled by component classes for toggle support without Tailwind config */
